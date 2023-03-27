@@ -1,0 +1,731 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    scroll-behavior: smooth;
+
+    width: 100%;
+}
+
+html,body  
+{  
+overflow-x:hidden;
+background-color: #d3d3d342;
+} 
+
+.p{
+    font-family:'Roboto',sans-serif; 
+    font-size: 12px;
+}
+.photo img 
+{
+    
+        object-fit: cover;
+        max-height: 7cm;
+        width: 100%;
+    
+}
+
+.en_tete{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.en_tete a:hover
+{
+    text-decoration:none ;
+}
+.en_tete h1 {
+    font-family:"Shrikhand", cursive;
+}
+
+.locate 
+{
+        background-color:#eaeaea;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.8;
+}
+        
+.locate #span
+{
+        gap: 1rem
+}
+        
+.locate.fas
+{
+            gap: 3rem;
+}
+
+.nom 
+{
+    position:relative;
+}
+
+
+
+.nom h1 
+{
+            font-family: "shrikhand", sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+           
+            display: block;
+            margin-left: 10px;
+}
+
+.nom h2
+{
+    border-bottom: 3px solid #99e2d0;
+    width: 50px;
+    line-height: 34px;
+    font-weight: inherit;
+    font-size: 18px;
+    margin: 1cm;
+}
+.menu__btn 
+{
+    height: 2rem;
+    width: 2rem;
+    background-color: initial;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right:3px;
+    top:0;
+    margin-right: 15px;
+}
+
+.menu__btn:before 
+{
+    opacity: 0;
+    transition: .5s;
+    content: "";
+    background: linear-gradient(0deg,#9356dc,#ff79da);
+}
+
+
+
+
+
+.entrees {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -21px;
+    animation: anim-grid 2s 300ms backwards;
+}
+
+@keyframes anim-grid
+{
+    0%{transform: translateY(-4em);
+    opacity:0 ;}
+
+    100%{transform: translateY(0);
+    opacity: 1;}
+    
+    
+}
+    
+
+.ent1{
+    width: 100%;
+    margin-top: 16px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    line-height: 0px;
+    box-shadow: 0px 9px 16px 0px lightgrey;
+    padding-left: 15px;
+    transform: translateY(-8px);
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity1-menu;
+    
+}
+
+.ent2{
+
+        width: 100%;
+        margin-top: 16px;
+        height: 70px;
+        background-color: white;
+        border-radius: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        align-content: flex-start;
+        line-height: 0px;
+        box-shadow: 0px 9px 16px 0px lightgrey;
+        padding-left: 15px;
+        transform: translateY(-8px);
+        position: relative;
+        flex-wrap: wrap;
+        cursor: pointer;
+        overflow: hidden;
+        animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity2-menu;
+        
+    }
+
+.ent3{
+    
+        width: 100%;
+        margin-top: 16px;
+        height: 70px;
+        background-color: white;
+        border-radius: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        align-content: flex-start;
+        line-height: 0px;
+        box-shadow: 0px 9px 16px 0px lightgrey;
+        padding-left: 15px;
+        transform: translateY(-8px);
+        position: relative;
+        flex-wrap: wrap;
+        cursor: pointer;
+        overflow: hidden;
+        animation: opacity3-menu cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
+        
+}
+.ent4{
+        width: 100%;
+        margin-top: 16px;
+        height: 70px;
+        background-color: white;
+        border-radius: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        align-content: flex-start;
+        line-height: 0px;
+        box-shadow: 0px 9px 16px 0px lightgrey;
+        padding-left: 15px;
+        transform: translateY(-8px);
+        position: relative;
+        flex-wrap: wrap;
+        cursor: pointer;
+        overflow: hidden;
+        animation: opacity3-menu cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
+}
+
+.entrees h1{
+    
+    height: 8px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 19px 0px 0px;
+    font-size: 16px;
+    font-weight: bolder;
+    
+}
+.ingredients{
+    width: 277px;
+    height: 33px;
+    font-size: 13px;
+    font-weight: 100;
+    display: inline-block;
+    font-family: "robotothin";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: width 1s;
+    line-height: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.prix{
+    display: flex;
+    width: 20%;
+    height: 72px;
+    transform: translateX(70px);
+    transition: 1s;
+    align-items: flex-end;
+    font-family: "robotoregular";
+    font-weight: bold;
+    justify-content: center;
+    line-height: 56px;
+    position: absolute;
+    left: 61%;
+}
+
+
+.ent1 h1{    margin-top: 16px;}  
+
+
+.ent2 h1{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.ent3 h1{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.ent4 h1{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+
+
+/* Plats */
+
+.plats {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -21px;
+    animation: anim-grid 2s 600ms backwards;
+}
+
+
+
+
+.plat1{
+    width: 100%;
+    margin-top: 16px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    line-height: 0px;
+    box-shadow: 0px 9px 16px 0px lightgrey;
+    padding-left: 15px;
+    transform: translateY(-8px);
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity1-plate;
+}
+
+.plat2{
+    width: 100%;
+    margin-top: 16px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    line-height: 0px;
+    box-shadow: 0px 9px 16px 0px lightgrey;
+    padding-left: 15px;
+    transform: translateY(-8px);
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity2-plate;
+
+}
+
+.plat3{
+    width: 100%;
+    margin-top: 16px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    line-height: 0px;
+    box-shadow: 0px 9px 16px 0px lightgrey;
+    padding-left: 15px;
+    transform: translateY(-8px);
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    animation: opacity3-plate cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
+
+}
+
+.plat h1{
+    
+    height: 8px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 19px 0px 0px;
+    font-size: 16px;
+    font-weight: bolder;
+    
+}
+
+.plat1 h1{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+
+.plat2 h1{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.plat3 h1{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+
+/* Desserts*/
+
+
+.desserts .animation-check{
+
+    animation-name: dessert-menu;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.47, 0.73, 0.25,) 
+}
+.desserts {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -21px;
+    animation: anim-grid 2s 900ms backwards;
+}
+
+.dsr1{
+    width: 100%;
+    margin-top: 16px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    line-height: 0px;
+    box-shadow: 0px 9px 16px 0px lightgrey;
+    padding-left: 15px;
+    transform: translateY(-8px);
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    animation: 1000ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity1-dessert;
+}
+
+.dsr2{
+    width: 100%;
+    margin-top: 16px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    line-height: 0px;
+    box-shadow: 0px 9px 16px 0px lightgrey;
+    padding-left: 15px;
+    transform: translateY(-8px);
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    animation: 1500ms cubic-bezier(0.47, 0.73, 0.25, 1) opacity2-dessert;
+
+}
+
+.dsr3{
+    width: 100%;
+    margin-top: 16px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: flex-start;
+    line-height: 0px;
+    box-shadow: 0px 9px 16px 0px lightgrey;
+    padding-left: 15px;
+    transform: translateY(-8px);
+    position: relative;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    animation: opacity3-dessert cubic-bezier(0.47, 0.73, 0.25, 1) 2s;
+
+}
+
+.desserts h1{
+    
+    height: 8px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 19px 0px 0px;
+    font-size: 16px;
+    font-weight: bolder;
+    
+}
+
+.dsr1 h1{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+
+.dsr2 h1{
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.dsr3 h1{
+    font-size: 16px;
+    margin-top: 16px;
+}
+.order {
+    margin-left: 32%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 30px;
+    width: 32%;
+    height: 51px;
+    box-shadow: 5px 7px 11px 5px lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 300ms;
+}
+
+/* footer*/ 
+.footer {
+    background-color: #353535;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    line-height: 2px;
+}
+ ul{
+color: white;
+font-size: 18px;
+list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact:link {
+    display: contents;
+    color: white;
+    text-decoration: none;
+}
+
+.footer p{
+    margin-left: 1em;
+}
+
+.footer i{color: white;}
+
+
+/*-------------------------- Animation entrées------------------*/
+.ent1:hover .prix {
+    transform: translateX(0px);
+    transition: 1s;
+}
+.ent1:hover .animation-check {
+    transform: translateX(0px);
+    transition-duration: 600ms;
+}
+.ent1:hover .animation-check i{
+    transform: rotate(360deg);
+}
+
+.ent2:hover .prix{
+    transform: translateX(0px);
+    transition: 1s;
+}
+.ent2:hover .animation-check {
+    transform: translateX(0px);
+    transition-duration: 600ms;
+}
+.ent2:hover .animation-check i {
+    transform: rotate(360deg);
+}
+
+.ent3:hover .prix {
+    transform: translateX(0px);
+    transition: 1s;
+}
+.ent3:hover .animation-check {
+    transform: translateX(0px);
+    transition-duration: 600ms;
+}
+
+.ent3:hover .animation-check i {
+    transform: rotate(360deg);
+}
+
+
+
+
+/*------------------ Animation dessert----------------*/
+
+.dsr1:hover .prix{
+    transform: translateX(0px);
+    transition: 1s;
+}
+.dsr1:hover .animation-check {
+    transform: translateX(0px);
+    transition-duration: 600ms;
+}
+.dsr1:hover .animation-check i {
+    transform: rotate(360deg);
+}
+
+.dsr2:hover .prix {
+    transform: translateX(0px);
+    transition: 1s;
+}
+.dsr2:hover .animation-check{
+    transform: translateX(0px);
+    transition-duration: 600ms;
+}
+.dsr2:hover .animation-check i {
+    transform: rotate(360deg);
+}
+
+.dsr3:hover .prix {
+    transform: translateX(0px);
+    transition: 1s;
+}
+.dsr3:hover .animation-check{
+    transform: translateX(0px);
+    transition-duration: 600ms;
+}
+
+.dsr3:hover .animation-check i{
+    transform: rotate(360deg);
+}
+@keyframes opacity1-dessert {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-8px);
+        transition-delay: 300ms;
+    }
+}
+@keyframes opacity2-dessert {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+        transition-delay: 600ms;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(6px);
+    }
+}
+@keyframes opacity3-dessert {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+        transition-delay: 900ms;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(21px);
+    }
+}
+
+/*------------ icone check-------------------*/
+.fa-check {
+    border-radius: 50%;
+    color: #99e2d0;
+    padding: 5px;
+    background-color: white;
+    transform: rotate(0deg);
+    transition-duration: 600ms;
+    position: absolute;
+    right: 1;
+}
+
+.fa-heart:before {
+    content: "\f004";
+    font-size: 2em;
+    font-weight: 100;
+}
+
+
+.fa-heart:hover{
+    font-size: 2em;
+    font-weight: 900;
+    color: #ff79da;
+   
+}
+
+
+/* animation-check */
+
+.animation-check {
+    height: 70px;
+    width: 65px;
+    background-color: #99e2d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: 1s;
+    transform: translateX(65px);
+    right: 0;
+}
